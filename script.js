@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  function toggleDrawer(event) {
+  function toggleDrawer() {
     if (drawerCont.classList.contains('active')) {
       drawerCont.classList.remove('active');
       drawerCont.setAttribute('aria-hidden', 'true');

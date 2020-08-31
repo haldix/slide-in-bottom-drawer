@@ -1,5 +1,6 @@
 $color-primary: #fcfcfc;
 $color-secondary: #333;
+$drawer-height: 220px;
 $anim-duration: 300ms;
 //  SET TIMEOUT for focus drawer button in JS must be greater than animation duratin
 
@@ -35,7 +36,7 @@ header {
 }
 
 .drawer-content {
-  height: 220px;
+  height: $drawer-height;
 }
 
 .bottom-drawer {
@@ -44,7 +45,7 @@ header {
   right: 0;
   overflow: auto;
   position: fixed;
-  bottom: -220px;
+  bottom: -1 * $drawer-height;
   z-index: 1;
   transition: all $anim-duration;
   visibility: hidden;
