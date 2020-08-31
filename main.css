@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2 {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  padding: 1.5rem;
+  margin: 3rem 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 0.3rem 3rem;
+  background-color: #333;
+}
+
+.drawer-content {
+  height: 220px;
+}
+
+.bottom-drawer {
+  background-color: #333;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  position: fixed;
+  bottom: -220px;
+  z-index: 1;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  visibility: hidden;
+}
+
+.bottom-drawer.active {
+  -webkit-transform: translateY(-220px);
+          transform: translateY(-220px);
+  visibility: visible;
+}
+
+.btn-drawer-toggle {
+  background-color: transparent;
+  border: 0;
+  color: #fcfcfc;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  position: relative;
+  text-align: center;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.btn-drawer-toggle .drawer-button-text {
+  display: inline-block;
+  margin-top: 0.5em;
+}
+
+.btn-drawer-toggle .drawer-icon {
+  display: block;
+  pointer-events: none;
+  color: #fcfcfc;
+  font-size: 2rem;
+}
+
+.btn-drawer-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #fcfcfc;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 0 0.3em;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn-drawer-close:hover, .btn-drawer-close:focus {
+  background-color: #fcfcfc;
+  color: #333;
+}
+
+/* Utilities */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/*# sourceMappingURL=main.css.map */

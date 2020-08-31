@@ -1,0 +1,113 @@
+$color-primary: #fcfcfc;
+$color-secondary: #333;
+$anim-duration: 300ms;
+//  SET TIMEOUT for focus drawer button in JS must be greater than animation duratin
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  padding: 1.5rem;
+  margin: 3rem 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 0.3rem 3rem;
+  background-color: $color-secondary;
+}
+
+.drawer-content {
+  height: 220px;
+}
+
+.bottom-drawer {
+  background-color: $color-secondary;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  position: fixed;
+  bottom: -220px;
+  z-index: 1;
+  transition: all $anim-duration;
+  visibility: hidden;
+}
+
+.bottom-drawer.active {
+  transform: translateY(-220px);
+  visibility: visible;
+}
+
+.btn-drawer-toggle {
+  background-color: transparent;
+  border: 0;
+  color: $color-primary;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  position: relative;
+  text-align: center;
+  transition: all $anim-duration;
+
+  .drawer-button-text {
+    display: inline-block;
+    margin-top: 0.5em;
+  }
+
+  .drawer-icon {
+    display: block;
+    pointer-events: none;
+    color: $color-primary;
+    font-size: 2rem;
+  }
+}
+
+.btn-drawer-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: $color-primary;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 0 0.3em;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-primary;
+    color: $color-secondary;
+  }
+}
+
+/* Utilities */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/*# sourceMappingURL=main.css.map */

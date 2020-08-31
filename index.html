@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bottom Drawer</title>
+    <link rel="stylesheet" href="main.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div
+      id="bottom-drawer"
+      class="bottom-drawer"
+      aria-hidden="true"
+      aria-label="bottom drawer"
+    >
+      <button
+        id="btn-drawer-close"
+        class="btn-drawer-close"
+        aria-controls="bottom-drawer"
+        aria-label="close drawer"
+      >
+        &times
+      </button>
+      <aside class="drawer-content">
+        <button type="button" id="test-btn">Click me</button>
+      </aside>
+    </div>
+    <header>
+      <button
+        aria-controls="bottom-drawer"
+        aria-haspopup="true"
+        aria-label="drawer collapsed"
+        id="btn-drawer-toggle"
+        class="btn-drawer-toggle"
+      >
+        <span class="drawer-icon" aria-hidden="true"> &#9776; </span>
+        <span class="drawer-button-text">Drawer</span>
+      </button>
+    </header>
+    <div id="container" class="container">
+      <main>
+        <h1>Accessible Bottom Drawer</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga eos
+          tempore ullam reiciendis iure eaque aliquam iste! Enim minus magni
+          dolor inventore? Fugiat, laborum aliquam. Est voluptates error culpa
+          iste. Earum eaque est laboriosam quasi dolorum nostrum sit. Laudantium
+          praesentium repellat laboriosam vero optio ea, ab tempora voluptate
+          quisquam dolorum. ste. Earum eaque est laboriosam quasi dolorum
+          nostrum sit. Laudantium praesentium repellat laboriosam vero optio ea,
+          ab tempora voluptate quisquam dolorum.
+        </p>
+        <a href="#">no where</a>
+        <h2>More Lorem</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga eos
+          tempore ullam reiciendis iure eaque aliquam iste! Enim minus magni
+          dolor inventore? Fugiat, laborum aliquam. Est voluptates error culpa
+          iste. Earum eaque est laboriosam quasi dolorum nostrum sit. Laudantium
+          praesentium repellat laboriosam vero optio ea, ab tempora voluptate
+          quisquam dolorum.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
