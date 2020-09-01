@@ -35,9 +35,9 @@ header {
   background-color: $color-secondary;
 }
 
-.drawer-content {
-  height: $drawer-height;
-}
+// .drawer-content {
+//   height: $drawer-height;
+// }
 
 .bottom-drawer {
   background-color: $color-secondary;
@@ -49,10 +49,11 @@ header {
   z-index: 1;
   transition: all $anim-duration;
   visibility: hidden;
+  height: $drawer-height;
 }
 
 .bottom-drawer.active {
-  transform: translateY(-220px);
+  transform: translateY(-1 * $drawer-height);
   visibility: visible;
 }
 
